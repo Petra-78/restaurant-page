@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Brastika';
+  src: url('./fonts/brastika-black-webfont.woff2') format('woff2'),
+    url('./fonts/brastika-black-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
 :root {
   --yellow: #FFD447;  
   --brown: #A15E31;   
@@ -27,10 +35,13 @@ body {
     width: 100%;
 }
 
-
 #contents {
     display: flex;
     flex-direction: column;
+}
+
+h1, h2, h3 {
+    font-family: "Brastika";
 }
 
 header {
@@ -43,7 +54,7 @@ header {
 
 h2 {
     color: var(--white);
-    font-size: 2rem;
+    font-size: 2.7rem;
 }
 
 nav {
@@ -107,7 +118,7 @@ nav > *:hover {
 
 h1 {
     color: var(--brown);
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 20px 0px;
     border-bottom: 5px solid var(--pink);
 }
@@ -154,7 +165,7 @@ p {
 .card > h3 {
     align-self: center;
     color: var(--brown);
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 20px 0px;
     border-bottom: 4px solid var(--pink);
 }
@@ -212,9 +223,11 @@ footer > p {
     gap: 1rem;
   }
 
-  h2 {
-    font-size: 1.5rem;
+  h2, h3 {
+    font-size: 2.2rem;
   }
+
+  
 
   .main {
     padding: 0 1.5rem;
@@ -238,7 +251,7 @@ footer > p {
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     padding: 10px 0;
   }
 
@@ -251,16 +264,13 @@ footer > p {
     gap: 2rem;
   }
 
-  .card > h3 {
-    font-size: 1.5rem;
-  }
 
   .check-menu {
-    margin: 2rem 0;
+    margin: -2rem 0 3rem 0;
   }
 
   .cta-btn, .menu-btn {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 8px 16px;
   }
 
@@ -283,7 +293,7 @@ footer > p {
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .main {
