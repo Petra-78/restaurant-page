@@ -1,6 +1,6 @@
 import "./home.css";
 
-const makeHomePage = (function() {
+const MakeHomePage = (function() {
 const contents = document.querySelector("#contents")
 
 //wrapper containers
@@ -111,7 +111,7 @@ contents.appendChild(main);
 contents.appendChild(footer);
 
 
-return contents
+return {contents, main}
 })()
 
-export {makeHomePage}
+export {MakeHomePage}

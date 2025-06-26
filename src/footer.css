@@ -1,0 +1,18 @@
+footer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--brown);
+}
+footer > p {
+    align-self: center;
+    color: var(--white);
+    padding-bottom: 20px;
+}
+
+.cheese {
+    background-image: url(./images/cheesus-crust.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+}
