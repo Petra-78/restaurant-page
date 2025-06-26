@@ -91,7 +91,7 @@ nav > *:hover {
     height: 100px;
 }
 
-.cta {
+.cta, .wrapper {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -197,18 +197,6 @@ p {
 .check-menu {
     margin-bottom: 100px;
     margin-top: -50px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--brown);
-}
-footer > p {
-    align-self: center;
-    color: var(--white);
-    padding-bottom: 20px;
 }
 
 /*phone*/

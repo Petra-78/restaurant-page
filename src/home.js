@@ -9,7 +9,7 @@ const cheese = document.createElement("div");
 const cta = document.createElement("div");
 const cards = document.createElement("div");
 const checkMenu = document.createElement("div");
-const footer = document.createElement("footer");
+
 
 //wrapper classes
 main.className = "main";
@@ -91,25 +91,13 @@ menuBtn.className = "menu-btn"
 menuBtn.textContent = "Check Menu"
 checkMenu.appendChild(menuBtn)
 
-//footer content 
-const cheeseFooter = document.createElement("div")
-cheeseFooter.classList = "cheese"
-const copyright = document.createElement("p")
-copyright.textContent = "Copyright @ 2025 Petra-78"
-
-//footer add content
-footer.appendChild(cheeseFooter)
-footer.appendChild(copyright)
-
-//wrappers add to main
+ //wrappers add to main
 main.appendChild(cta);
 main.appendChild(cards);
 main.appendChild(checkMenu);
 
 contents.appendChild(cheese);
 contents.appendChild(main);
-contents.appendChild(footer);
-
 
 return {contents, main}
 })()
