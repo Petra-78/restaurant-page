@@ -54,9 +54,11 @@ header {
 }
 
 h2 {
-    color: var(--white);
-    font-size: 2.7rem;
+  font-size: 2.7rem;
+  color: var(--white);
+  text-align: center;
 }
+
 
 nav {
     display: flex;
@@ -76,7 +78,7 @@ nav > *:hover {
 }
 
 .main {
-    display: none;
+    display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center; 
@@ -131,7 +133,7 @@ p {
     text-align: justify;
 }
 
-.cta-btn, .menu-btn {
+.cta-btn, .menu-btn, .submit {
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: 700;
@@ -141,7 +143,7 @@ p {
     border-radius: 15px;
 }
 
-.cta-btn:hover, .menu-btn:hover {
+.cta-btn:hover, .menu-btn:hover, .submit:hover {
     cursor: pointer;
     background-color: var(--green);
 }
@@ -160,13 +162,20 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10%;
 }
+
+.card > p {
+  color: var(--black);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;         
+}
+
 
 .card > h3 {
     align-self: center;
     color: var(--brown);
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 20px 0px;
     border-bottom: 4px solid var(--pink);
 }
@@ -197,6 +206,179 @@ p {
 .check-menu {
     margin-bottom: 100px;
     margin-top: -50px;
+}
+
+/* contact */
+.contact-main, .menu-main {
+    display: none;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 100px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; 
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+}
+
+input, textarea {
+    padding: 10px 20px;
+    border: 3px solid var(--pink);
+    border-radius: 10px;
+    background-color: var(--yellow);
+    margin-bottom: 2rem;
+}
+
+label {
+    color: var(--brown);
+    font-size: 1.7rem;
+    font-family: "Brastika";
+}
+
+.contact-texts, .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 20px;
+    align-self: center;
+}
+
+/* footer */
+footer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--brown);
+}
+footer > p {
+    align-self: center;
+    color: var(--white);
+    padding-bottom: 20px;
+}
+
+.cheese {
+    background-image: url(./images/cheesus-crust.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+.menu-main {
+  flex-direction: column;
+  gap: 6rem;
+  width: 100%;
+  align-items: center;
+}
+
+.menu-main > div {
+  width: 90%;
+}
+
+
+.menu-main > * > div{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+}
+
+.menu-main h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  width: 100%;
+}
+
+
+.menu-main > * > h2 {
+  color: var(--brown);
+  align-self: center;
+}
+
+.card-pic {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  border-radius: 10%;
+}
+
+
+.pizza-pic1 {
+  background-image: url(./images/menu/6.png);
+}
+
+.pizza-pic2 {
+  background-image: url(./images/menu/7.png);
+}
+
+.pizza-pic3 {
+  background-image: url(./images/menu/10.png);
+}
+
+.pizza-pic4 {
+  background-image: url(./images/menu/8.png);
+}
+
+.pizza-pic5 {
+  background-image: url(./images/menu/9.png);
+}
+
+.pizza-pic6 {
+  background-image: url(./images/menu/5.png);
+}
+
+.pasta-pic1 {
+  background-image: url(./images/menu/1.png);
+}
+
+.pasta-pic2 {
+  background-image: url(./images/menu/2.png);
+}
+
+.pasta-pic3 {
+  background-image: url(./images/menu/4.png);
+}
+
+.pasta-pic4 {
+  background-image: url(./images/menu/3.png);
+}
+
+.burger-pic1 {
+  background-image: url(./images/menu/13.png);
+}
+
+.burger-pic2 {
+  background-image: url(./images/menu/14.png);
+}
+
+.burger-pic3 {
+  background-image: url(./images/menu/12.png);
+}
+
+.burger-pic4 {
+  background-image: url(./images/menu/11.png);
+}
+
+.burger-pic5 {
+  background-image: url(./images/menu/16.png); /* or any image you have */
+}
+
+.burger-pic6 {
+  background-image: url(./images/menu/15.png); /* or any fallback */
 }
 
 /*phone*/
@@ -256,9 +438,10 @@ p {
 
   .check-menu {
     margin: -2rem 0 3rem 0;
+    width: 100px;
   }
 
-  .cta-btn, .menu-btn {
+  .cta-btn, .menu-btn, .submit {
     font-size: 1rem;
     padding: 8px 16px;
   }
@@ -320,18 +503,23 @@ p {
     gap: 3rem;
   }
 
-  .card > h3 {
-    font-size: 1.7rem;
-  }
+.card > h3 {
+  font-size: 1.6rem;
+  color: var(--brown);
+  margin: 1rem 0;
+  border-bottom: 3px solid var(--pink);
+  text-align: center;
+}
 
-  .cta-btn, .menu-btn {
+
+  .cta-btn, .menu-btn, .submit {
     font-size: 1rem;
     padding: 10px 18px;
   }
 
   .card-pic1,   
   .card-pic2,
-  .card-pic3 {
+  .card-pic3{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

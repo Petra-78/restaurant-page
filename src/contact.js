@@ -37,6 +37,9 @@
     const firstNI = document.createElement("input")
     const emailI = document.createElement("input")
     const messageI = document.createElement("textarea")
+    const submitBtn = document.createElement("button")
+    submitBtn.className = "submit"
+    submitBtn.textContent = "Submit"
     
     //label setters
     firstNL.setAttribute("for", "first-name")
@@ -76,6 +79,7 @@
     form.appendChild(emailI)
     form.appendChild(messageL)
     form.appendChild(messageI)
+    form.appendChild(submitBtn)
 
 
     contents.appendChild(contactMain);
