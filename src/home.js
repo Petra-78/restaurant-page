@@ -1,4 +1,4 @@
-import "./home.css";
+import "./index.css";
 
 const MakeHomePage = (function() {
 const contents = document.querySelector("#contents")

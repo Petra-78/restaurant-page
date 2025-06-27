@@ -1,4 +1,4 @@
-  import "./contact.css";
+  import "./index.css";
   const MakeContactPage = (function() {
     const contents = document.querySelector("#contents")
 

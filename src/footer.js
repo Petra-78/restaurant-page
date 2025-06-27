@@ -1,4 +1,4 @@
-import "./footer.css"
+import "./index.css"
 const MakeFooter = (function() {
     const contents = document.querySelector("#contents")
     const footer = document.createElement("footer");
